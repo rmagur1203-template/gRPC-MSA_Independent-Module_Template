@@ -1,14 +1,14 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestMicroservice } from '@nestjs/common';
-import { AppModule } from './../src/app.module';
-import { grpcClientOptions } from 'shared/lib/options/hello.grpc';
+import { AppModule } from '../src/app.module';
 import * as ProtoLoader from '@grpc/proto-loader';
 import * as GRPC from '@grpc/grpc-js';
 import { ServiceClient } from '@grpc/grpc-js/build/src/make-client';
+import { grpcClientOptions } from '../src/grpc.option';
 import {
   HELLO_PACKAGE_NAME,
   HELLO_SERVICE_NAME,
-} from 'shared/lib/generated/hello';
+} from '../src/grpc/hello.proto';
 
 describe('AppController (e2e)', () => {
   let app: INestMicroservice;

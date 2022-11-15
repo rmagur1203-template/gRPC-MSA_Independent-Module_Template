@@ -5,7 +5,7 @@ import {
   GetHelloResponse,
   HelloServiceController,
   HelloServiceControllerMethods,
-} from './hello.proto';
+} from '../grpc/hello.proto';
 
 @Controller()
 @HelloServiceControllerMethods()
