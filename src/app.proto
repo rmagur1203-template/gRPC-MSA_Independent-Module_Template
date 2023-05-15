@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package hello;
+package app;
 
 service HelloService {
     rpc GetHello(GetHelloRequest) returns (GetHelloResponse) {}

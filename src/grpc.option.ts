@@ -8,7 +8,7 @@ export const grpcClientOptions: GrpcOptions = addReflectionToGrpcConfig({
   transport: Transport.GRPC,
   options: {
     url: `${serviceHost}:${servicePort}`,
-    package: 'hello',
-    protoPath: 'src/hello.proto',
+    package: 'app',
+    protoPath: 'src/app.proto',
   },
 });
